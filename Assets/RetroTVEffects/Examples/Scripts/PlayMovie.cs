@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Video;
 
 public class PlayMovie : MonoBehaviour
 {
 #if !UNITY_WEBGL
-	public MovieTexture Texture;
+	public VideoPlayer video;
 
     void Start()
     {
-        Texture.Play();
+        video.Play();
     }
 #endif
 }
